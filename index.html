@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CodeCamp Hub — Home</title>
+  <meta name="description" content="CodeCamp Hub — Learn HTML, CSS and JavaScript through guided lessons and hands-on projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-dark">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">CodeCamp <span class="accent">Hub</span></a>
+      <button id="navToggle" class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="lessons.html">Lessons</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="themeToggle" class="btn" title="Toggle theme" aria-pressed="false">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80');">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 class="glow">Welcome to CodeCamp Hub — Your Coding Journey Starts Here.</h1>
+          <p class="lead">Learn HTML, CSS, and JavaScript with interactive lessons and fun challenges.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="lessons.html">Start Learning</a>
+            <a class="btn btn-ghost" href="projects.html">Explore Projects</a>
+          </div>
+          <ul class="skill-icons" aria-hidden="true">
+            <li class="chip">HTML</li>
+            <li class="chip">CSS</li>
+            <li class="chip">JS</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="glass-card">
+            <pre class="code-sample">&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;Hello&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;Welcome!&lt;/body&gt;
+&lt;/html&gt;</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <h2>What you'll learn</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <div class="card-icon">&lt;/&gt;</div>
+          <h3>HTML Basics</h3>
+          <p>Semantic markup, accessibility, forms, and structure.</p>
+          <a class="link-btn" href="lessons.html#html">Start Lesson</a>
+        </article>
+        <article class="card">
+          <div class="card-icon">🎨</div>
+          <h3>CSS Design</h3>
+          <p>Responsive layouts, Flexbox, Grid, animations, and theming.</p>
+          <a class="link-btn" href="lessons.html#css">Start Lesson</a>
+        </article>
+        <article class="card">
+          <div class="card-icon">⚡</div>
+          <h3>JavaScript Logic</h3>
+          <p>DOM, events, small apps, and progressive enhancement.</p>
+          <a class="link-btn" href="lessons.html#js">Start Lesson</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects-preview container">
+      <h2>Build and Practice</h2>
+      <p class="muted">Apply your knowledge through real-world projects.</p>
+      <div class="grid grid-3 projects-grid">
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=60" alt="Portfolio thumbnail">
+          <h4>Portfolio Website</h4>
+          <p>Showcase your work with a personal portfolio.</p>
+          <a class="link-btn" href="projects.html#portfolio">Try Project</a>
+        </article>
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=60" alt="To-do app thumbnail">
+          <h4>To-Do App</h4>
+          <p>Practice DOM updates, localStorage, and state.</p>
+          <a class="link-btn" href="projects.html#todo">Try Project</a>
+        </article>
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=60" alt="Mini game thumbnail">
+          <h4>Mini Game</h4>
+          <p>Build a simple interactive game with JavaScript logic.</p>
+          <a class="link-btn" href="projects.html#game">Try Project</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter container">
+      <div class="newsletter-inner">
+        <h3>Stay updated</h3>
+        <p>Get a simple tip every week. No spam.</p>
+        <form id="newsletterForm" action="#" onsubmit="return false;">
+          <label for="email" class="sr-only">Email address</label>
+          <input id="email" type="email" placeholder="you@example.com" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p id="newsletterMsg" class="muted small" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 CodeCamp Hub | Designed by Lovely Oncines and Maria Curayag</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
